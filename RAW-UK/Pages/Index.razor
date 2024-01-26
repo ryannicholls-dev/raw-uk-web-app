@@ -1,12 +1,6 @@
 ﻿@page "/"
 @inject IJSRuntime JsRuntime
 
-@code{
-    protected override void OnAfterRender(bool firstRender) {
-        JsRuntime.InvokeVoidAsync("blazorInterop.initializeAnimations");
-    }
-}
-
 <header>
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container-fluid">
@@ -72,3 +66,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="/app.js"></script>
+
+@code{
+    protected override void OnAfterRender(bool firstRender) 
+    {
+        JsRuntime.InvokeVoidAsync("blazorInterop.initializeAnimations");
+    }
+}
