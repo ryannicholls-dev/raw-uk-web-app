@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK", "RAW-UK\RAW-UK.csproj", "{DC136433-627F-4047-86BC-F6981E84318A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK.Model", "RAW-UK.Model\RAW-UK.Model.csproj", "{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{DC136433-627F-4047-86BC-F6981E84318A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC136433-627F-4047-86BC-F6981E84318A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC136433-627F-4047-86BC-F6981E84318A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
