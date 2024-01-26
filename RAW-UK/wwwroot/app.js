@@ -5,8 +5,9 @@ const scrollText = document.querySelector('.scroll-text');
 
 const tl = new TimelineMax();
 
-tl.fromTo(image, 1, { height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+tl.fromTo(image, 1, { height: "0%"}, {height: "80%", ease: Power2.easeInOut }).delay(0.5)
   .fromTo(image, 1.2, { width: "100%"}, { width: "70%", ease: Power2.easeInOut})
+  .fromTo(headline, 0.5, {visibility: "hidden"}, {visibility: "visible"}, "-=1")
   .fromTo(headline, 1, { opacity: 0 }, { opacity: 1 }, "-=0.5")
   .fromTo(scrollText, 1.5, { opacity: 0 }, { opacity: 1 });
 
