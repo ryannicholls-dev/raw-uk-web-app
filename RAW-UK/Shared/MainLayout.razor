@@ -10,6 +10,18 @@
     </main>
 </div>
 
-<MudThemeProvider/>
+<MudThemeProvider Theme="CustomRawTheme" />
 <MudDialogProvider/>
 <MudSnackbarProvider/>
+
+@code {
+    MudTheme CustomRawTheme = new MudTheme()
+    {
+        Palette = new PaletteLight()
+        {
+            Primary = "#33ff00",
+            TextPrimary = Colors.Shades.White,
+            TextSecondary = Colors.Shades.White
+        }
+    };
+}
