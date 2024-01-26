@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK", "RAW-UK\RAW-UK.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK.Model", "RAW-UK.Model\RAW-UK.Model.csproj", "{30C7678A-FB37-4DB8-9581-21CFF731EBF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK.UI", "RAW-UK.UI\RAW-UK.UI.csproj", "{121DE5F9-DED3-4C80-BEC7-477376FAAC38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK.UI", "RAW-UK.UI\RAW-UK.UI.csproj", "{8ED8A173-E415-4178-BB24-322C91D165BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{30C7678A-FB37-4DB8-9581-21CFF731EBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C7678A-FB37-4DB8-9581-21CFF731EBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30C7678A-FB37-4DB8-9581-21CFF731EBF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{121DE5F9-DED3-4C80-BEC7-477376FAAC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{121DE5F9-DED3-4C80-BEC7-477376FAAC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{121DE5F9-DED3-4C80-BEC7-477376FAAC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{121DE5F9-DED3-4C80-BEC7-477376FAAC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED8A173-E415-4178-BB24-322C91D165BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED8A173-E415-4178-BB24-322C91D165BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED8A173-E415-4178-BB24-322C91D165BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED8A173-E415-4178-BB24-322C91D165BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
