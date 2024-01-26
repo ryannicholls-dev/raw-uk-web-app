@@ -1,5 +1,5 @@
 const hero = document.querySelector('.hero');
-const image = document.querySelector('.hero-img');
+const image = document.querySelector('.bg-img');
 const headline = document.querySelector('.headline');
 const scrollText = document.querySelector('.scroll-text');
 

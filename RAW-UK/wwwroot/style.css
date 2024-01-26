@@ -54,17 +54,19 @@ h1 {
     object-position: center 70%;
 }
 
-/* logo png
-/* .hero img {
-    width: 100%;
+/* logo png */
+.bg-img {
+    background-image: url('./ASSETS/logo_with_background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+    box-shadow: 0 0 50px 30px black inset;
     height: 100%;
-    object-fit: cover;
-    object-position: center 200%;
-    opacity: 1;
-} */ 
+    width: 100%;
+} 
 
 .headline {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .hero h1, .hero p {
