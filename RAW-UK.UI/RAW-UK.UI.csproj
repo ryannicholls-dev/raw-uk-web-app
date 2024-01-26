@@ -18,9 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components/" />
-    <Folder Include="Mappers/" />
     <Folder Include="ViewModels/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RAW-UK.Model\RAW-UK.Model.csproj" />
   </ItemGroup>
 
 </Project>
