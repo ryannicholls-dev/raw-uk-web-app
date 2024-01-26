@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK", "RAW-UK\RAW-UK.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK.Model", "RAW-UK.Model\RAW-UK.Model.csproj", "{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAW-UK.UI", "RAW-UK.UI\RAW-UK.UI.csproj", "{97D030A5-4F6F-42D8-A93C-41C4FA60C740}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0109CEA2-80B6-49FC-8B8D-4DDDD2C75500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D030A5-4F6F-42D8-A93C-41C4FA60C740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D030A5-4F6F-42D8-A93C-41C4FA60C740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D030A5-4F6F-42D8-A93C-41C4FA60C740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D030A5-4F6F-42D8-A93C-41C4FA60C740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
