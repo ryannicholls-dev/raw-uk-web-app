@@ -15,6 +15,16 @@
     font-style: normal;
 }
 
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 body {
     /* font-family: 'RawFont', sans-serif !important; */
 }
@@ -67,13 +77,14 @@ h1 {
     box-shadow: 0 0 50px 30px black inset;
     height: 100%;
     width: 100%;
-} 
+}
 
 .headline {
     /* visibility: hidden; */
 }
 
-.hero h1, .hero p {
+.hero h1,
+.hero p {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -82,7 +93,7 @@ h1 {
     color: white;
 }
 
-.hero p{
+.hero p {
     font-family: 'RawFont', sans-serif !important;
     font-size: 2rem;
     top: 80%;
@@ -98,7 +109,7 @@ h1 {
 }
 
 
-.scroll-text a:hover{
+.scroll-text a:hover {
     color: var(--neon-green);
     transition: color 0.5s ease;
 }
@@ -107,15 +118,43 @@ h1 {
 /* About Section Styling */
 
 .about {
+    position: relative;
     height: 100vh;
+    width: 100;
     background-color: black;
     padding: 10%;
+    margin: 0;
+    padding: 0;
 }
 
 .about h1 {
     font-size: 4rem;
     color: white;
     text-align: center;
+}
+
+/* Scroll text */
+
+.news-ticker-container {
+    position: absolute;
+    bottom: 10%; /* You may need to adjust this value */
+    width: 100%; /* Ensure it spans the entire width */
+    display: flex;
+    justify-content: center;
+}
+
+.news-ticker {
+    font-family: 'RawFont', sans-serif !important;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+}
+
+.news-ticker span {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
 }
 
 /* MudBlazor Overwrites */
@@ -127,5 +166,3 @@ h1 {
 .mud-button-filled.mud-button-filled-primary {
     background-color: #212121;
 }
-
-
