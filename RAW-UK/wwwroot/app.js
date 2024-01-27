@@ -5,6 +5,7 @@ window.blazorInterop = {
         const headline = document.querySelector('.headline');
         const scrollText = document.querySelector('.scroll-text');
         const navBar = document.querySelector('.navbar-nav');
+        const ticker = document.querySelector('.news-ticker-container');
 
         const tl = new TimelineMax();
 
@@ -12,15 +13,16 @@ window.blazorInterop = {
           .fromTo(image, 1.2, { width: "100%"}, { width: "70%", ease: Power2.easeInOut})
           .fromTo(headline, 0.5, {visibility: "hidden"}, {visibility: "visible"}, "-=1")
           .fromTo(navBar, 1, { opacity: 0 }, { opacity: 1 }, "-=0.5")
-          .fromTo(headline, 1, { opacity: 0 }, { opacity: 1 }, "-=1")
-          .fromTo(scrollText, 1.5, { opacity: 0 }, { opacity: 1 });
+          .fromTo(ticker, 3, { opacity: 0 }, { opacity: 1 }, "-=1")
+          .fromTo(headline, 1, { opacity: 0 }, { opacity: 1 }, "-=3")
+          .fromTo(scrollText, 1.5, { opacity: 0 }, { opacity: 1 },"-=2");
 
         //SCROLLMAGIC
         const controller = new ScrollMagic.Controller();
 
         const logoAnim = TweenMax.fromTo(image, 1.5, { opacity: 1 }, { opacity: 0 });
         const textAnim = TweenMax.fromTo(headline, 1.5, { opacity: 1 }, { opacity: 0 });
-
+  
         //SCENES
         let logoScene = new ScrollMagic.Scene({
           duration: 500, 

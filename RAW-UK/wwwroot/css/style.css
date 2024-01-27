@@ -160,7 +160,7 @@ h1 {
 
 .news-ticker-2 span {
     animation: marquee 240s linear infinite;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     padding-left: 100%;
 }
 
