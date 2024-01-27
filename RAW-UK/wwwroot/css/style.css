@@ -136,25 +136,30 @@ h1 {
 /* Scroll text */
 
 .news-ticker-container {
-    position: absolute;
-    bottom: 10%; /* You may need to adjust this value */
-    width: 100%; /* Ensure it spans the entire width */
-    display: flex;
-    justify-content: center;
-}
-
-.news-ticker {
-    font-family: 'RawFont', sans-serif !important;
-    font-size: 2rem;
+    margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    position: absolute;
-    text-align: center;
+    display: inline-block;
+}
+
+.news-ticker,
+.news-ticker-2 {
+    font-family: 'RawFont', sans-serif !important;
+    color: var(--neon-green);
+    opacity: 0.5;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 5%;
 }
 
 .news-ticker span {
     display: inline-block;
-    animation: marquee 20s linear infinite;
+    padding-left: 100%;
+    animation: marquee 60s linear infinite;
+}
+
+.news-ticker-2 span {
+    animation-delay: 30s;
 }
 
 /* MudBlazor Overwrites */
