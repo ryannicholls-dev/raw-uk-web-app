@@ -36,7 +36,12 @@
 
 <section id="about" class="about">
     <h1>GET STARTED</h1>
-    <SignUpForm />
+    <div class="d-flex justify-content-center">
+        <div class="col-md-6">
+            <SignUpForm />
+        </div>
+    </div>
+
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
@@ -67,8 +72,8 @@
 
 <script src="/app.js"></script>
 
-@code{
-    protected override void OnAfterRender(bool firstRender) 
+@code {
+    protected override void OnAfterRender(bool firstRender)
     {
         JsRuntime.InvokeVoidAsync("blazorInterop.initializeAnimations");
     }
