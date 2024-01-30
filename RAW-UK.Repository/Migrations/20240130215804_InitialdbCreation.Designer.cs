@@ -12,7 +12,7 @@ using RAW_UK.Repository;
 namespace RAW_UK.Repository.Migrations
 {
     [DbContext(typeof(RawUKDbContext))]
-    [Migration("20240130204646_InitialdbCreation")]
+    [Migration("20240130215804_InitialdbCreation")]
     partial class InitialdbCreation
     {
         /// <inheritdoc />

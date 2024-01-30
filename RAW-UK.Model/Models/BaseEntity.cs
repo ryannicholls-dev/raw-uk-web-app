@@ -6,5 +6,5 @@ public class BaseEntity
 {
     public int Id { get; set; }
     public bool IsArchived { get; set; } = false;
-    public DateTime? ArchivedDate { get; set; }
+    public DateTime? ArchivedDate { get; set; } = null;
 }

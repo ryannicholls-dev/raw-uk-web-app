@@ -24,5 +24,5 @@ public class SignUpViewModel
     public string Mobile { get; set; } = string.Empty;
     
     public bool IsArchived { get; set; }
-    public DateTime ArchivedDate { get; set; }
+    public DateTime? ArchivedDate { get; set; }
 }
