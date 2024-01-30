@@ -14,6 +14,7 @@ builder.Services.AddDbContext<RawUKDbContext>(options => options.UseSqlServer(bu
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<SignUpDataService>();
 
 var app = builder.Build();
 

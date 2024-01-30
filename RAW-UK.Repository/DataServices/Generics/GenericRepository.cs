@@ -46,7 +46,6 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
                 query = query.Include(includeProperty);
             }
         }
-y
         return await query.ToListAsync();
     }
     public async Task<TEntity?> GetByIdAsync(int id)

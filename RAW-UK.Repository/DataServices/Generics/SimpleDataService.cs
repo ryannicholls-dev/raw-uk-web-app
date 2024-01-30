@@ -7,7 +7,7 @@ public class SimpleDataService<TEntity> where TEntity : class
     private readonly IUnitOfWork unitOfWork;
     private readonly IGenericRepository<TEntity> repository;
 
-    public SimpleDataService(UnitOfWork _unitOfWork, GenericRepository<TEntity> _repository)
+    public SimpleDataService(IUnitOfWork _unitOfWork, IGenericRepository<TEntity> _repository)
     {
         unitOfWork = _unitOfWork;
         repository = _repository;

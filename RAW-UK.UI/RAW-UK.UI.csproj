@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RAW-UK.Model\RAW-UK.Model.csproj" />
+    <ProjectReference Include="..\raw-uk.repository\RAW-UK.Repository.csproj" />
   </ItemGroup>
 
 </Project>
