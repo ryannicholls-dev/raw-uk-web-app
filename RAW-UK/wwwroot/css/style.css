@@ -135,8 +135,7 @@ h1 {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    display: inline-block;
-    background-color: black;
+    background-color: black;    
 }
 
 .news-ticker,
