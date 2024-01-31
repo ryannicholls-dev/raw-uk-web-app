@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "RAW-UK.sln"
+    "dotnet.defaultSolution": "RAW-UK.sln",
+    "appService.defaultWebAppToDeploy": "None"
 }
