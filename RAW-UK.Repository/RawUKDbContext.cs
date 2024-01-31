@@ -11,7 +11,25 @@ public class RawUKDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<SignUp>().ToTable($"{nameof(SignUp)}s");
+        modelBuilder.Entity<SignUp>(entity => {
+            
+            entity.ToTable($"{nameof(SignUp)}s");
+
+            entity.HasKey(e => e.Id);
+
+            entity.Property(x => x.FirstName)
+                  .HasMaxLength(100);
+
+            entity.Property(x => x.LastName)
+                  .HasMaxLength(100);
+
+            entity.Property(x => x.Email)
+                  .HasMaxLength(100);
+
+            entity.Property(x => x.Mobile)
+                  .HasMaxLength(100);
+
+        });
 
         base.OnModelCreating(modelBuilder);
     }

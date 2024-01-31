@@ -21,6 +21,9 @@ public class SignUpViewModel
 
     [Required]
     [Display(Name = "Mobile Number")]
+    [RegularExpression(@"^\+?[0-9]+$", ErrorMessage = "Invalid mobile number.")]
+    [MaxLength(11, ErrorMessage = "Mobile number must be 11 numbers long")]
+    [MinLength(11, ErrorMessage = "Mobile number must be 11 numbers long")]
     public string Mobile { get; set; } = string.Empty;
     
     public bool IsArchived { get; set; }

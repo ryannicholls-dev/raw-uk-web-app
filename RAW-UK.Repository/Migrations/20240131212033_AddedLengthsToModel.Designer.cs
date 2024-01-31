@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RAW_UK.Repository;
 
@@ -11,9 +12,11 @@ using RAW_UK.Repository;
 namespace RAW_UK.Repository.Migrations
 {
     [DbContext(typeof(RawUKDbContext))]
-    partial class RawUKDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240131212033_AddedLengthsToModel")]
+    partial class AddedLengthsToModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
