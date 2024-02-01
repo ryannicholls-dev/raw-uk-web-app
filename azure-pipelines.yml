@@ -34,6 +34,16 @@ stages:
       inputs:
         command: 'build'
         projects: 'src/*.sln'
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'publish'
+        publishWebProjects: true
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: publish
+        publishWebProjects: True
+        arguments: '--output $(Build.ArtifactStagingDirectory)'
+        zipAfterPublish: True       
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
