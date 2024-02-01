@@ -38,3 +38,4 @@ stages:
       inputs:
         command: 'publish'
         publishWebProjects: true
+        arguments: '-o $(Build.ArtifactStagingDirectory)'
