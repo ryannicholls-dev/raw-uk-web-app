@@ -41,7 +41,7 @@ stages:
       inputs:
         command: 'publish'
         publishWebProjects: false
-        projects: 'src/*.sln'
+        projects: 'src/**/*.csproj'
         zipAfterPublish: false
         modifyOutputPath: false
     - task: PublishBuildArtifacts@1
