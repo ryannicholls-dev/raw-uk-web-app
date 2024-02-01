@@ -10,7 +10,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      vmImage: ubuntu-latest
+      vmImage: windows-latest
     steps:
     - task: UseDotNet@2
       displayName: 'Install .NET Core SDK'
@@ -26,10 +26,10 @@ stages:
     - task: NuGetCommand@2
       inputs:
         command: 'restore'
-        restoreSolution: '**/*.sln'
+        restoreSolution: 'src/*.sln'
         feedsToUse: 'select'
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
         command: 'build'
-        projects: '**/*.sln'
+        projects: 'src/*.sln'
