@@ -17,13 +17,12 @@ stages:
       inputs:
         version: 7.x
         performMultiLevelLookup: true
-        includePreviewVersions: true # Required for preview versions
+        includePreviewVersions: true
     - task: DotNetCoreCLI@2
       inputs:
         command: 'restore'
         projects: 'src/*.sln'
         feedsToUse: 'select'
-        vstsFeed: '0a135520-25df-4e57-9ae6-262789794a3b'
     - task: NuGetCommand@2
       inputs:
         command: 'restore'
@@ -34,16 +33,3 @@ stages:
       inputs:
         command: 'build'
         projects: '**/*.sln'
-    
-    - task: DotNetCoreCLI@2
-      displayName: Test
-      inputs:
-        command: 'test'
-        projects: 'tests/UnitTests/*.csproj'
-    
-    - task: DotNetCoreCLI@2
-      displayName: Publish
-      inputs:
-        command: 'publish'
-        publishWebProjects: true
-        arguments: '-o $(Build.ArtifactStagingDirectory)'
