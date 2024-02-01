@@ -40,10 +40,6 @@ stages:
     - task: DotNetCoreCLI@2
       inputs:
         command: 'publish'
-        publishWebProjects: true
-    - task: DotNetCoreCLI@2
-      inputs:
-        command: 'publish'
         publishWebProjects: false
         projects: 'src/*.sln'
         zipAfterPublish: false
