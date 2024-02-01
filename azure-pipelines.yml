@@ -34,8 +34,8 @@ stages:
       inputs:
         command: 'build'
         projects: 'src/*.sln'
-    - task: DotNetCoreCLI@2
+    - task: PublishBuildArtifacts@1
       inputs:
-        command: 'publish'
-        publishWebProjects: true
-        arguments: '-o $(Build.ArtifactStagingDirectory)'
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
