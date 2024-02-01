@@ -1,0 +1,16 @@
+﻿<EditForm Model="@InputViewModel" OnValidSubmit="OnHandleValidSubmit">
+    <DataAnnotationsValidator />
+    <MudCard>
+        <MudCardContent>
+            <MudTextField Label="First Name" @bind-Value="InputViewModel.FirstName" For="(() => InputViewModel.FirstName)"/>
+            <MudTextField Label="Last Name" @bind-Value="InputViewModel.LastName" For="(() => InputViewModel.LastName)"/>
+            <MudTextField Label="Email Address" @bind-Value="InputViewModel.Email" For="(() => InputViewModel.Email)"/>
+            <MudTextField Label="Tel No" @bind-Value="InputViewModel.Mobile" For="(() => InputViewModel.Mobile)"/>
+        </MudCardContent>
+    </MudCard>
+    <MudCardActions>
+        <div class="ml-auto">
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto mr-2 ">SIGN UP</MudButton>
+        </div>
+    </MudCardActions>
+</EditForm>

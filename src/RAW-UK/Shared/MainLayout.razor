@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>RAW UK</PageTitle>
+
+<div class="page">
+    <main>
+        <article>
+            @Body
+        </article>
+    </main>
+</div>
+
+<MudThemeProvider Theme="CustomRawTheme" />
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+@code {
+    MudTheme CustomRawTheme = new MudTheme()
+    {
+        Palette = new PaletteLight()
+        {
+            Primary = "#33ff00",
+            TextPrimary = Colors.Shades.White,
+            TextSecondary = Colors.Shades.White
+        }
+    };
+}
