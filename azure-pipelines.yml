@@ -43,9 +43,11 @@ stages:
         publishWebProjects: true
     - task: DotNetCoreCLI@2
       inputs:
-        command: publish
-        arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-        zipAfterPublish: false       
+        command: 'publish'
+        publishWebProjects: false
+        projects: 'src/*'
+        zipAfterPublish: false
+        modifyOutputPath: false
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
